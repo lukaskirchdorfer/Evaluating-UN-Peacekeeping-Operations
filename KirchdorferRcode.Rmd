@@ -1,0 +1,770 @@
+---
+title: "Evaluating UN Peacekeeping Operations"
+author: "Lukas Kirchdorfer"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    template: template.tex
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 2
+    keep_tex: yes
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    keep_md: yes
+  html_document:
+    toc: yes
+    toc_depth: '2'
+    df_print: paged
+    keep_md: yes
+bibliography: bibliography.bib
+csl-hanging-indent: yes
+fontsize: 12pt 
+linestretch: 2 # adjust for line spacing 
+geometry: left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm
+classoption:
+- a4paper
+- oneside
+lang: en-EN
+numbersections: yes
+csquotes: yes
+type: Data Essay for Course
+course: Quantitative Methods in Political Science
+subtitle: ''
+address: ''
+email: jdoe@mail.uni-mannheim.de
+phone: ''
+examiner: Prof. Thomas Gschwend, Ph.D.
+chair: ''
+mp: 0.55
+ID: ''
+wordcount: '*Wordcount excluding References: `r unima::count_words(knitr::current_input())`*' 
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/american-political-science-association.csl
+editor_options:
+  markdown:
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.path = "figs/",
+                      out.width="\\textwidth"
+                      )
+p_needed <- c(# all packages you need to install here
+  "knitr",
+  "remotes",
+  "ggplot2",
+  "stargazer",
+  "foreign",
+  "tidyr",
+  "dplyr",
+  "MASS",
+  "viridis",
+  "countreg"
+  ) 
+
+# installs only the required packages 
+lapply(p_needed[!(p_needed %in% rownames(installed.packages()))], install.packages)
+lapply(p_needed, library, character.only = TRUE)
+
+# separately install for the correct wordcount package 
+if (!"unima" %in% rownames(installed.packages())){
+  remotes::install_github("vktrsmnv/unima-template", upgrade = "never", dependencies = TRUE)
+  }
+
+# this allows you to add notes to figures with a simple chunk option
+# you only need to add "notes="text" as a chunk option; 
+# the notes will only appear in PDF output
+hook_chunk = knit_hooks$get('chunk')
+knit_hooks$set(chunk = function(x, options) {
+  txt = hook_chunk(x, options)
+  # add chunk option 'description' which adds \Description{...} to figures
+  if (!is.null(options$notes)) {
+    latex_include <- paste0("\\\\vspace\\{0.5cm\\} \\\\\\footnotesize\\{\\\\textit\\{Notes: \\}", options$notes, "\\} \\1")
+    gsub('(\\\\end\\{figure\\})', latex_include, txt) 
+  } else {
+    return(txt)  # pass to default hook
+  }
+})
+if (knitr::is_latex_output()) knitr::knit_hooks$set(plot = knitr::hook_plot_tex)
+
+# This is an option for stargazer tables
+# It automatically adapts the output to html or latex,
+# depending on whether we want a html or pdf file
+stargazer_opt <- ifelse(knitr::is_latex_output(), "latex", "html")
+
+# This ensures that if the file is knitted to HTML,
+# significance notes are depicted correctly 
+if (stargazer_opt == "html"){
+  fargs <- formals(stargazer)
+  fargs$notes.append = FALSE
+  fargs$notes = c("<em>&#42;p&lt;0.1;&#42;&#42;p&lt;0.05;&#42;&#42;&#42;p&lt;0.01</em>")
+  formals(stargazer) <- fargs
+}
+
+# only relevant for ggplot2 plotting
+# setting a global ggplot theme for the entire document to avoid 
+# setting this individually for each plot 
+theme_set(theme_classic() + # start with classic theme 
+  theme(
+    plot.background = element_blank(),# remove all background 
+    plot.title.position = "plot", # move the plot title start slightly 
+    legend.position = "bottom" # by default, put legend on the bottom
+  ))
+
+set.seed(2021)
+
+```
+
+```{r knit options, include=FALSE}
+knitr::opts_chunk$set(
+  inlcude = FALSE,
+  warning = FALSE,
+  error = FALSE
+)
+```
+
+```{r, include=FALSE, warning=FALSE}
+install.packages("countreg",repos="http://R-Forge.R-project.org")
+library("countreg")
+```
+
+
+
+```{r, echo=FALSE, warning=FALSE}
+# Load data
+load("raw-data/pko.RData")
+#pko
+
+# impute troop and police NAs with the median which is 0 (because 1690 of 21518 is a lot: ~7%)
+#pko2 <- pko
+pko$troop_lag1000[is.na(pko$troop_lag1000)] <- median(na.omit((pko$troop_lag1000)))
+
+pko$police_lag1000[is.na(pko$police_lag1000)] <- median(na.omit((pko$police_lag1000)))
+
+# impute log population with the median
+pko$pop_ln[is.na(pko$pop_ln)] <- median(na.omit((pko$pop_ln)))
+
+# impute rebel strength with median
+pko$rebel_strength[is.na(pko$rebel_strength)] <- median(na.omit((pko$rebel_strength)))
+
+# delete rows where brf_gr and brf_grc have NA values (only 125 rows)
+df_clean <- pko[!is.na(pko$brf_grc),]
+df_clean
+```
+
+```{r, echo=FALSE}
+# some own calculated statistics
+
+# list of countries
+unique(pko[c("gov")])
+
+# sd of the dep. variable
+sd(df_clean$brf_grc)
+
+# ceasefire
+table(pko$ceasefire)
+
+# check outliers
+arrange(df_clean, desc(brf_grc))
+
+arrange(df_clean, desc(troop_lag1000))
+
+
+```
+
+```{r, echo=FALSE}
+# data statistics
+summary(df_clean)
+
+str(pko)
+```
+
+```{r}
+plot(x = df_clean$troop_lag1000,
+     y = df_clean$brf_grc,
+     #type = "n",
+     ylab = "Number of battle deaths",
+     xlab = "UN troop size in 1000",
+     #ylim = c(0,500),
+     bty = "n",
+     las = "1",
+     main = "Number of battle-related deaths in African Civil Wars from 1989 
+     to 2011 depending on UN troop size and ceasefire agreement",
+     col = ifelse(df_clean$ceasefire == 1, viridis(3, 0.5)[1], viridis(3, 0.5)[2])
+     )
+legend("topright",
+       legend = c("With ceasefire agreement", "Without ceasefire agreement"),
+       col = c(viridis(3, 0.5)),
+       lty = "solid",
+       lwd = 2,
+       pch= 20,
+       pt.cex = 2,
+       bty = "n")
+```
+
+
+```{r, echo=FALSE, warning=FALSE}
+par(mfrow=c(1,2))
+
+hist(df_clean$brf_gr,
+     ylim = c(0,25000),
+     xlim = c(0,10000),
+     main = "Distribution of Battle related 
+     fatalities including civilians",
+     xlab = "Number of Battle related fatalities",
+     ylab = "Frequency",
+     )
+
+
+hist(df_clean$troop_lag1000,
+     ylim = c(0,20000),
+     xlim = c(0,30),
+     main = "Distribution of UN military troops",
+     xlab = "Number of UN troops in thousand",
+     ylab = "Frequency",
+     )
+
+```
+```{r, echo=FALSE, warning=FALSE}
+# Histogram of ceasefire variable
+ceasefire_table <- table(df_clean$ceasefire)
+barplot(ceasefire_table,
+        main = "Willingness to aggree to a ceasefire",
+        xlab = "",
+        ylab = "Frequency",
+        ylim = c(0,14000),
+        names.arg = c("No", "Yes"),
+        col = viridis(1),
+        border = F,
+        las = 1)
+```
+```{r, echo=FALSE, warning=FALSE}
+# boxplot 
+boxplot(df_clean[,c(5)], main="Boxplot for Number of Battle Deaths")
+
+```
+
+
+```{r, echo=FALSE}
+# GLM: Poisson
+poisson_ <- glm(brf_grc ~ troop_lag1000 + police_lag1000 + ceasefire + rebel_strength + n_rebel_groups + brf_grc_lag + pop_ln + biased_intervention, data=df_clean, family = "poisson")
+summary(poisson_)
+
+```
+```{r, echo=FALSE, warning=FALSE}
+# GLM: Neg. Binomial
+neg_bin_1 <- glm.nb(brf_grc ~ troop_lag1000 + police_lag1000 + ceasefire + rebel_strength + n_rebel_groups + brf_grc_lag + pop_ln + biased_intervention, data=df_clean, control = glm.control(maxit = 200))
+summary(neg_bin_1)
+```
+
+
+```{r, echo=FALSE, warning=FALSE}
+# GLM: Neg. Binomial without rebel strength
+neg_bin_2 <- glm.nb(brf_grc ~ troop_lag1000 + police_lag1000 + ceasefire + n_rebel_groups + brf_grc_lag + pop_ln + biased_intervention, data=df_clean, control = glm.control(maxit = 200))
+summary(neg_bin_2)
+```
+
+```{r, echo=FALSE, warning=FALSE}
+# GLM: Neg. Binomial without police_lag1000
+neg_bin_3 <- glm.nb(brf_grc ~ troop_lag1000 + ceasefire + n_rebel_groups + brf_grc_lag + pop_ln + biased_intervention, data=df_clean, control = glm.control(maxit = 200))
+summary(neg_bin_3)
+```
+
+
+```{r, echo=FALSE, warning=FALSE}
+# Very basic model
+neg_bin_4 <- glm.nb(brf_grc ~ troop_lag1000 + ceasefire, data=df_clean, control = glm.control(maxit = 100))
+summary(neg_bin_4)
+```
+
+```{r, echo=FALSE, warning=FALSE}
+# model with interactions
+neg_bin_5 <- glm.nb(brf_grc ~ troop_lag1000 + ceasefire*brf_grc_lag, data=df_clean, control = glm.control(maxit = 200))
+summary(neg_bin_5)
+```
+
+
+
+```{r}
+# Likelihood Ratio Test
+L1 <- logLik(poisson_) 
+L2 <- logLik(neg_bin_1) 
+
+LRT <- -2 * L1 + 2 * L2 # converges to chi^2 distribution
+
+LRT > qchisq(0.95, df = 1) 
+```
+```{r}
+# create density curve
+plot(
+  x = seq(0, 20, length.out = 100),
+  y = dchisq(seq(0, 20, length.out = 100), df = 1),
+  main = "Chi-Square Distribution (df = 1)",
+  ylab = "Density",
+  lwd = 2,
+  xlab = "X",
+  las = 1,
+  type = "l"
+)
+
+# abline(v = LRT)
+abline(v = qchisq(0.95, df = 1), col = "red")
+```
+
+
+```{r}
+# AIC test
+# Poisson model
+AIC(poisson_) 
+
+# Negative Binomial Model 1
+AIC(neg_bin_1) 
+
+# Negative Binomial Model 2
+AIC(neg_bin_2)
+
+# Negative Binomial Model 3
+AIC(neg_bin_3)
+
+# Negative Binomial Model 4
+AIC(neg_bin_4)
+
+# Negative Binomial Model 5
+AIC(neg_bin_5)
+
+# Poisson is worse than neg. binomial
+```
+
+```{r, warning=FALSE}
+# Rootogram
+# par(mfrow = c(1, 2), las = 1)
+# rootogram(
+#   poisson_, 
+#   main = "Poisson Model",
+#   ylab ="Squareroot of Frequency",
+#   xlab = "Battle-related fatalities incl. civilians")
+
+# commented out as it is computationally very expensive
+```
+```{r, include=FALSE, warning=FALSE}
+#rootogram(neg_bin_2, main = "Negative Binomial Model")
+```
+
+
+```{r}
+# Quantities of Interest
+
+# 1. Get coefficients from regression
+nsim <- 1000
+gamma_hat_1 <- coef(neg_bin_3)
+# 2. Get the variance-covariance matrix
+V_hat_1 <- vcov(neg_bin_3)
+# 3. Set up a multivariate normal distribution
+S_1 <- mvrnorm(nsim, gamma_hat_1, V_hat_1)
+```
+
+```{r}
+names(gamma_hat_1)
+```
+
+```{r}
+prior_troops <- round(seq(
+  min(neg_bin_3$model$troop_lag1000),
+  max(neg_bin_3$model$troop_lag1000),
+  length.out = 100
+))
+
+# scenario 1: no ceasefire agreement
+scenario1 <- cbind(
+  1, # intercept
+  prior_troops,
+  #median(df_clean$police_lag1000, na.rm = TRUE),
+  0, # no ceasefire
+  #median(df_clean$rebel_strength, na.rm = TRUE),
+  median(df_clean$n_rebel_groups, na.rm = TRUE),
+  median(df_clean$brf_grc_lag, na.rm = TRUE),
+  mean(df_clean$pop_ln, na.rm = TRUE),
+  median(df_clean$biased_intervention, na.rm = TRUE)
+)
+colnames(scenario1) <- names(gamma_hat_1)
+
+# scenario 2: ceasefire agreement
+scenario2 <- scenario1
+scenario2[, which(colnames(scenario2) == "ceasefire")] <- 1
+
+# scenario 3: biased intervention and ceasefire agreement
+scenario3 <- scenario1
+scenario3[, which(colnames(scenario3) == "ceasefire")] <- 1
+scenario3[, which(colnames(scenario3) == "biased_intervention")] <- 1
+
+# scenario 4: ceasefire and many rebel groups
+scenario4 <- scenario1
+scenario4[, which(colnames(scenario4) == "ceasefire")] <- 1
+scenario4[, which(colnames(scenario4) == "n_rebel_groups")] <- 17
+
+# scenario 5: ceasefire and high pop
+scenario5 <- scenario1
+scenario5[, which(colnames(scenario5) == "ceasefire")] <- 1
+scenario5[, which(colnames(scenario5) == "pop_ln")] <- max(df_clean$pop_ln, na.rm = TRUE)
+
+# scenario 6: ceasefire and low pop
+scenario6 <- scenario1
+scenario6[, which(colnames(scenario6) == "ceasefire")] <- 1
+scenario6[, which(colnames(scenario6) == "pop_ln")] <- min(df_clean$pop_ln, na.rm = TRUE)
+
+head(scenario1)
+head(scenario2)
+head(scenario3)
+head(scenario4)
+head(scenario5)
+head(scenario6)
+```
+
+
+```{r}
+Xbeta1_1 <- S_1 %*% t(scenario1)
+Xbeta2_1 <- S_1 %*% t(scenario2)
+Xbeta3_1 <- S_1 %*% t(scenario3)
+Xbeta4_1 <- S_1 %*% t(scenario4)
+Xbeta5_1 <- S_1 %*% t(scenario5)
+Xbeta6_1 <- S_1 %*% t(scenario6)
+```
+
+```{r}
+# get expected values for lambda
+lambda1_1 <- exp(Xbeta1_1)
+lambda2_1 <- exp(Xbeta2_1)
+lambda3_1 <- exp(Xbeta3_1)
+lambda4_1 <- exp(Xbeta4_1)
+lambda5_1 <- exp(Xbeta5_1)
+lambda6_1 <- exp(Xbeta6_1)
+
+# plug lambda and theta into neg binomial distribution
+theta_1 <- neg_bin_3$theta
+
+exp_no_ceasefire <-
+  apply(lambda1_1, c(1, 2), function(x) {
+    mean(rnbinom(10000, size = theta_1, mu = x))
+  })
+
+exp_ceasefire <-
+  apply(lambda2_1, c(1, 2), function(x) {
+    mean(rnbinom(10000, size = theta_1, mu = x))
+  })
+
+exp_ceasefire_biased <-
+  apply(lambda3_1, c(1, 2), function(x) {
+    mean(rnbinom(10000, size = theta_1, mu = x))
+  })
+
+exp_ceasefire_rebels <-
+  apply(lambda4_1, c(1, 2), function(x) {
+    mean(rnbinom(10000, size = theta_1, mu = x))
+  })
+
+exp_ceasefire_maxpop <-
+  apply(lambda5_1, c(1, 2), function(x) {
+    mean(rnbinom(10000, size = theta_1, mu = x))
+  })
+
+exp_ceasefire_minpop <-
+  apply(lambda6_1, c(1, 2), function(x) {
+    mean(rnbinom(10000, size = theta_1, mu = x))
+  })
+```
+
+```{r}
+quants_no_ceasefire <- t(apply(exp_no_ceasefire, 2, quantile, c(0.025, 0.5, 0.975)))
+quants_ceasefire <- t(apply(exp_ceasefire, 2, quantile, c(0.025, 0.5, 0.975)))
+quants_ceasefire_biased <- t(apply(exp_ceasefire_biased, 2, quantile, c(0.025, 0.5, 0.975)))
+quants_ceasefire_rebels <- t(apply(exp_ceasefire_rebels, 2, quantile, c(0.025, 0.5, 0.975)))
+quants_ceasefire_maxpop <- t(apply(exp_ceasefire_maxpop, 2, quantile, c(0.025, 0.5, 0.975)))
+quants_ceasefire_minpop <- t(apply(exp_ceasefire_minpop, 2, quantile, c(0.025, 0.5, 0.975)))
+# colnames(quants_no_ceasefire)
+# colnames(quants_ceasefire)
+```
+
+```{r}
+par(las = 1)
+# segment plot
+plot(
+  prior_troops,
+  quants_no_ceasefire[, "50%"],
+  type = "n",
+  ylim = c(0, 10),
+  xlim = c(0,30),
+  ylab = "Number of Battle-related fatalities",
+  xlab = "UN Troop size in thousands",
+  bty = "n",
+  main = "Expected Number of Battle-related fatalities in Civil War Situations"
+)
+
+segments(
+  x0 = prior_troops, x1 = prior_troops,
+  y1 = quants_no_ceasefire[, "97.5%"], y0 = quants_no_ceasefire[, "2.5%"],
+  col = viridis(4, 0.5)[1],
+  lwd = 2
+)
+points(prior_troops, quants_no_ceasefire[, 2], col = viridis(4, 0.5)[1], pch = 20)
+
+segments(
+  x0 = prior_troops, x1 = prior_troops,
+  y1 = quants_ceasefire[, "97.5%"], y0 = quants_ceasefire[, "2.5%"],
+  col = viridis(4, 0.5)[2],
+  lwd = 2
+)
+points(prior_troops, quants_ceasefire[, 2], col = viridis(4, 0.5)[2], pch = 20)
+
+
+axis(
+  1,
+  at = df_clean$troop_lag1000,
+  col.ticks = "gray30",
+  labels = FALSE,
+  tck = 0.02
+)
+
+legend(
+  "topright",
+  legend = c(
+    "Median, mean & 95% CI:",
+    "No Ceasefire",
+    "Ceasefire"
+  ),
+  col = c(
+    "white",
+    viridis(4, 0.5)
+  ),
+  lty = "solid",
+  lwd = 2,
+  pch = 20,
+  pt.cex = 2,
+  bty = "n"
+)
+
+abline(h = 0, lty = "dashed")
+```
+
+
+```{r}
+# additional scenarios
+par(las = 1)
+# segment plot
+plot(
+  prior_troops,
+  quants_no_ceasefire[, "50%"],
+  type = "n",
+  ylim = c(0, 50),
+  xlim = c(0,30),
+  ylab = "Number of Battle-related fatalities",
+  xlab = "UN Troop size in thousands",
+  bty = "n",
+  main = "Expected Number of Battle-related fatalities in Civil War Situations"
+)
+
+segments(
+  x0 = prior_troops, x1 = prior_troops,
+  y1 = quants_ceasefire_biased[, "97.5%"], y0 = quants_ceasefire_biased[, "2.5%"],
+  col = viridis(4, 0.5)[1],
+  lwd = 2
+)
+points(prior_troops, quants_ceasefire_biased[, 2], col = viridis(4, 0.5)[1], pch = 20)
+
+segments(
+  x0 = prior_troops, x1 = prior_troops,
+  y1 = quants_ceasefire_rebels[, "97.5%"], y0 = quants_ceasefire_rebels[, "2.5%"],
+  col = viridis(4, 0.5)[2],
+  lwd = 2
+)
+points(prior_troops, quants_ceasefire_rebels[, 2], col = viridis(4, 0.5)[2], pch = 20)
+
+segments(
+  x0 = prior_troops, x1 = prior_troops,
+  y1 = quants_ceasefire_maxpop[, "97.5%"], y0 = quants_ceasefire_maxpop[, "2.5%"],
+  col = viridis(4, 0.5)[3],
+  lwd = 2
+)
+points(prior_troops, quants_ceasefire_maxpop[, 2], col = viridis(4, 0.5)[3], pch = 20)
+
+segments(
+  x0 = prior_troops, x1 = prior_troops,
+  y1 = quants_ceasefire_minpop[, "97.5%"], y0 = quants_ceasefire_minpop[, "2.5%"],
+  col = viridis(4, 0.5)[4],
+  lwd = 2
+)
+points(prior_troops, quants_ceasefire_minpop[, 2], col = viridis(4, 0.5)[4], pch = 20)
+
+# Add a "histogram" of actual X1-values.
+axis(
+  1,
+  at = df_clean$troop_lag1000,
+  col.ticks = "gray30",
+  labels = FALSE,
+  tck = 0.02
+)
+
+legend(
+  "topright",
+  legend = c(
+    "Median, mean & 95% CI:",
+    "Ceasefire and biased intervention",
+    "Ceasefire and 17 rebel groups",
+    "Ceasefire and max population",
+    "Ceasefire and min population"
+  ),
+  col = c(
+    "white",
+    viridis(4, 0.5)
+  ),
+  lty = "solid",
+  lwd = 2,
+  pch = 20,
+  pt.cex = 2,
+  bty = "n"
+)
+
+abline(h = 0, lty = "dashed")
+```
+
+
+```{r}
+# First Difference:
+FD <- exp_no_ceasefire - exp_ceasefire
+quants_FD <- t(apply(FD, 2, quantile, c(0.025, 0.5, 0.975)))
+
+plot(
+  prior_troops,
+  quants_FD[, "50%"],
+  type = "n",
+  ylim = c(min(quants_FD[, "2.5%"]),5), #max(quants_FD[, "97.5%"])),
+  ylab = "Difference in Expected Battle-related fatalities",
+  xlab = "UN troop size in 1000",
+  bty = "n",
+  main = "Difference in Expected Battle-related fatalities 
+  between wars with and without ceasefire agreement",
+  las = 1
+)
+segments(
+  x0 = prior_troops, x1 = prior_troops,
+  y1 = quants_FD[, "97.5%"], y0 = quants_FD[, "2.5%"],
+  col = viridis(1, 0.5)
+)
+points(prior_troops, quants_FD[, 2], col = viridis(1, 0.5), pch = 20)
+
+abline(h = 0, lty = "dashed")
+```
+
+```{r}
+par(mar=c(5,10,7,1)-.5)
+
+FD <- cbind(
+  exp_no_ceasefire[, 95] - exp_no_ceasefire[, 5],
+  exp_ceasefire[, 95] - exp_ceasefire[, 5],
+  exp_ceasefire_biased[, 95] - exp_ceasefire_biased[, 5],
+  exp_ceasefire_rebels[, 95] - exp_ceasefire_rebels[, 5],
+  exp_ceasefire_maxpop[, 95] - exp_ceasefire_maxpop[, 5],
+  exp_ceasefire_minpop[, 95] - exp_ceasefire_minpop[, 5]
+)
+quants_FD <- t(apply(FD, 2, quantile, c(0.025, 0.5, 0.975)))
+
+
+
+plot(
+  y = 1:6,
+  x = quants_FD[, "50%"],
+  type = "n",
+  ylab = "",
+  # xlim = range(pretty(c(
+  #   min(quants_FD[, "2.5%"]), max(quants_FD[, "97.5%"])
+  # ))),
+  xlim = c(-10,0),
+  ylim = c(1, 5),
+  xlab = "Difference in Expected Battle-related fatalities",
+  main = "Differences in Expected Battle-related fatalities within 
+  selected scenarios for large and small values (95% CI)",
+  bty = "n",
+  las = 1,
+  axes = F
+)
+
+segments(
+  x0 = quants_FD[, "2.5%"],
+  x1 = quants_FD[, "97.5%"],
+  y0 = c(1.2, 1.8, 2.4, 3.0, 3.6, 4.2)
+)
+points(
+  x = quants_FD[, "50%"],
+  y = c(1.2, 1.8, 2.4, 3.0, 3.6, 4.2),
+  pch = 19
+)
+axis(
+  2,
+  at =  c(1.2, 1.8, 2.4, 3.0, 3.6, 4.2),
+  las = 1,
+  labels = c("No Ceasefire", "Ceasefire", "Ceasefire and biased", "Ceasefire and 17 rebel groups", "Ceasefire and max population", "Ceasefire and min population"),
+  tick = F,
+  line = F,
+  hadj = 0.7
+)
+axis(1)
+abline(v = 0, lty = "dashed")
+```
+
+```{r}
+# Robustness Checks
+
+# remove outliers
+model_outlier <- glm.nb(formula = brf_grc ~ troop_lag1000 + ceasefire + n_rebel_groups + brf_grc_lag + pop_ln + biased_intervention, data = neg_bin_3$model[!rstandard(neg_bin_3) > 2, ], control = glm.control(maxit = 200), )
+summary(model_outlier)
+summary(neg_bin_3)
+
+# => troop lag is still statistically significant => model is robust
+```
+
+```{r}
+# Robustness Checks
+# only subset of data
+
+nrow(df_clean)
+subset1 <- df_clean[1:10000,]
+
+model_subset1 <- glm.nb(brf_grc ~ troop_lag1000 + ceasefire + n_rebel_groups + brf_grc_lag + pop_ln + biased_intervention, data=subset1, control = glm.control(maxit = 200))
+summary(model_subset1)
+
+
+
+subset2 <- df_clean[10001:20000,]
+model_subset2 <- glm.nb(brf_grc ~ troop_lag1000 + ceasefire + n_rebel_groups + brf_grc_lag + pop_ln + biased_intervention, data=subset2, control = glm.control(maxit = 200))
+summary(model_subset2)
+
+
+# -> troop size has still negative coefficient: robust
+```
+
+
+```{r, warning=FALSE}
+stargazer(
+  list(neg_bin_1, neg_bin_3, neg_bin_5, model_outlier),
+  out = "table_lab.tex",
+  title = "Regression Results",
+  notes = "Model 4 excluding outliers",
+  intercept.bottom = TRUE,
+   covariate.labels = c(
+     "UN Troops in thousand t-1",
+     "UN Police in thousand t-1",
+     "Ceasefire",
+     "Strength of \\\\Rebel Group",
+     "Number of Rebel Groups",
+     "Battle-related \\\\fatalities t-1",
+     "Population ln",
+     "Biased Intervention",
+     "Ceasefire x Battle-related \\\\fatalities t-1",
+     "Constant"
+   ),
+  dep.var.labels = c("Battle-related fatalities in a month, incl. civilians"),
+  table.placement = "H", # latex output, keep the figure at exactly Here in text
+  type = "text" #stargazer_opt
+)
+```

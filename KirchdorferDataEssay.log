@@ -1,0 +1,2011 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.8)  10 DEC 2021 18:22
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**KirchdorferDataEssay.tex
+(./KirchdorferDataEssay.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2021-11-22> (c:/Users/kirch/AppData/Roaming/TinyTeX/texmf
+-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.
+sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.s
+ty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.
+sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.st
+y
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip49
+For additional information on amsmath, use the `?' option.
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.st
+y
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen139
+))
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count187
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count188
+\leftroot@=\count189
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count190
+\DOTSCASE@=\count191
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count192
+\c@MaxMatrixCols=\count193
+\dotsspace@=\muskip16
+\c@parentequation=\count194
+\dspbrk@lvl=\count195
+\tag@help=\toks18
+\row@=\count196
+\column@=\count197
+\maxfields@=\count198
+\andhelp@=\toks19
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.st
+y
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.s
+ty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tocbibind/tocbibin
+d.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has section divisions on input line 50.
+
+Package tocbibind Note: Using section or other style headings.
+
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.
+sty
+Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.
+sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count199
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.st
+y
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+\csq@reset=\count266
+\csq@gtype=\count267
+\csq@glevel=\count268
+\csq@qlevel=\count269
+\csq@maxlvl=\count270
+\csq@tshold=\count271
+\csq@ltx@everypar=\toks23
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.
+def
+File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.
+cfg
+File: csquotes.cfg 
+)) (c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.s
+ty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color
+.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Package option `usenames' ignored on input line 218.
+Package xcolor Info: Driver file: xetex.def on input line 227.
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex
+.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.
+def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.
+sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.
+sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdfte
+xcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwar
+err.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetk
+eys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvd
+efinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfesc
+ape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.st
+y
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltx
+macro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.st
+y
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoption
+s.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen148
+\Hy@linkcounter=\count272
+\Hy@pagecounter=\count273
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.de
+f
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-
+langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.
+sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmd
+s.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count274
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4073.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count275
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen149
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.st
+y
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigin
+tcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count276
+\Field@Width=\dimen150
+\Fld@charsize=\dimen151
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring ON on input line 6094.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.
+sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count277
+\c@Item=\count278
+\c@Hfootnote=\count279
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.de
+f
+File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/string
+enc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box52
+\c@Hy@AnnotLevel=\count280
+\HyField@AnnotCount=\count281
+\Fld@listcount=\count282
+\c@bookmark@seq@number=\count283
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rer
+unfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx
+.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/un
+iquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip52
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.
+sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.
+sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graph
+ics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+)
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+)
+\cslhangindent=\skip53
+\csllabelwidth=\skip54
+\cslentryspacingunit=\skip55
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count284
+\calc@Bcount=\count285
+\calc@Adimen=\dimen154
+\calc@Bdimen=\dimen155
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count286
+\calc@Cskip=\skip58
+) (c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fixltx2e.st
+y
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/mathspec/mathspe
+c.sty
+Package: mathspec 2016/12/22 v0.2b LaTeX Package (Mathematics font selection fo
+r XeLaTeX)
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.
+sty
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
+xparse.sty
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-11-22 L3 programming layer (loader) 
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
+d-xetex.def
+File: l3backend-xetex.def 2021-10-18 L3 backend support: XeTeX
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count287
+\l__color_backend_stack_int=\count288
+\g__color_backend_stack_int=\count289
+\g__graphics_track_int=\count290
+\l__pdf_internal_box=\box53
+\g__pdf_backend_object_int=\count291
+\g__pdf_backend_annotation_int=\count292
+\g__pdf_backend_link_int=\count293
+))
+Package: xparse 2021-11-12 L3 Experimental document command parser
+)
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-
+xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count294
+\l__fontspec_language_int=\count295
+\l__fontspec_strnum_int=\count296
+\l__fontspec_tmp_int=\count297
+\l__fontspec_tmpa_int=\count298
+\l__fontspec_tmpb_int=\count299
+\l__fontspec_tmpc_int=\count300
+\l__fontspec_em_int=\count301
+\l__fontspec_emdef_int=\count302
+\l__fontspec_strong_int=\count303
+\l__fontspec_strongdef_int=\count304
+\l__fontspec_tmpa_dim=\dimen156
+\l__fontspec_tmpb_dim=\dimen157
+\l__fontspec_tmpc_dim=\dimen158
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.
+cfg)))
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.st
+y
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.
+tex
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils
+.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count305
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\c@eu@=\count306
+\c@eu@i=\count307
+\c@mkern=\count308
+)
+Package hyperref Info: Option `unicode' set `true' on input line 123.
+Package hyperref Info: Option `breaklinks' set `true' on input line 123.
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/polygl
+ossia.sty
+Package: polyglossia 2021/04/12 v1.53 Modern multilingual typesetting with XeLa
+TeX and LuaLaTeX
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecmds/makecmds.
+sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2
+e/l3keys2e.sty
+Package: l3keys2e 2021-11-12 LaTeX2e option processing using LaTeX3 keys
+)
+
+LaTeX hooks Warning: Generic hook 'file/after/tracklang.sty' is deprecated.
+(hooks)              Use hook 'file/tracklang.sty/after' instead.
+
+
+LaTeX hooks Warning: Generic hook 'package/after/bidi' is deprecated.
+(hooks)              Use hook 'package/bidi/after' instead.
+
+
+LaTeX hooks Warning: Generic hook 'package/after/luabidi' is deprecated.
+(hooks)              Use hook 'package/luabidi/after' instead.
+
+\xpg@normalclass=\XeTeXcharclass1
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-
+latex.ldf
+File: gloss-latex.ldf polyglossia: module for default language
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+)
+Package polyglossia Info: Default language is latex.
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/gloss-
+english.ldf
+File: gloss-english.ldf polyglossia: module for english
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {english}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+Package polyglossia Info: Option: English, variant=american.
+)
+Package polyglossia Info: Default language is english.
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.
+sty
+Package: fancyvrb 2021/11/24\nobreakspace {} 4.1a\nobreakspace {}verbatim text 
+(tvz,hv)
+\FV@CodeLineNo=\count309
+\FV@InFile=\read2
+\FV@TabBox=\box54
+\c@FancyVerbLine=\count310
+\FV@StepNumber=\count311
+\FV@OutFile=\write3
+) (c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.st
+y
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip59
+\fb@frw=\dimen159
+\fb@frh=\dimen160
+\FrameRule=\dimen161
+\FrameSep=\dimen162
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.
+sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip60
+\f@nch@O@elh=\skip61
+\f@nch@O@erh=\skip62
+\f@nch@O@olh=\skip63
+\f@nch@O@orh=\skip64
+\f@nch@O@elf=\skip65
+\f@nch@O@erf=\skip66
+\f@nch@O@olf=\skip67
+\f@nch@O@orf=\skip68
+)
+
+Package fontspec Info: EBGaramond-Regular scale = 1.077495279330142.
+
+
+Package fontspec Info: EBGaramond-Regular scale = 1.077495279330142.
+
+
+Package fontspec Info: EBGaramond-Regular scale = 1.077495279330142.
+
+
+Package fontspec Info: EBGaramond-Bold scale = 1.077495279330142.
+
+
+Package fontspec Info: EBGaramond-Bold scale = 1.077495279330142.
+
+
+Package fontspec Info: EBGaramond-Italic scale = 1.077495279330142.
+
+
+Package fontspec Info: EBGaramond-Italic scale = 1.077495279330142.
+
+
+Package fontspec Info: EBGaramond-BoldItalic scale = 1.077495279330142.
+
+
+Package fontspec Info: EBGaramond-BoldItalic scale = 1.077495279330142.
+
+
+Package fontspec Info: Font family 'EBGaramond-Regular.ttf(0)' created for
+(fontspec)             font 'EBGaramond-Regular.ttf' with options
+(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Ligatures=TeX,Path
+(fontspec)             = fonts/static/,BoldFont =
+(fontspec)             EBGaramond-Bold.ttf,ItalicFont =
+(fontspec)             EBGaramond-Italic.ttf,BoldItalicFont =
+(fontspec)             EBGaramond-BoldItalic.ttf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1.077495279330142]"[fonts/static/EBGaramond-Regula
+r.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1.077495279330142]"[fonts/static/EBGaramond-Regula
+r.ttf]/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.077495279330142]"[fonts/static/EBGaramond-Bold.t
+tf]/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1.077495279330142]"[fonts/static/EBGaramond-Bold.t
+tf]/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1.077495279330142]"[fonts/static/EBGaramond-Italic
+.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1.077495279330142]"[fonts/static/EBGaramond-Italic
+.ttf]/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1.077495279330142]"[fonts/static/EBGaramond-BoldIt
+alic.ttf]/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1.077495279330142]"[fonts/static/EBGaramond-BoldIt
+alic.ttf]/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/n' will be
+(Font)              scaled to size 12.93pt on input line 256.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'polyglossia' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'american'.
+(./KirchdorferDataEssay.aux
+LaTeX Info: Redefining \rmfamily on input line 19.
+LaTeX Info: Redefining \sffamily on input line 19.
+LaTeX Info: Redefining \ttfamily on input line 19.
+)
+\openout1 = `KirchdorferDataEssay.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 260.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
+60.
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 260.
+LaTeX Font Info:    ... okay on input line 260.
+Package hyperref Info: Link coloring ON on input line 260.
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
+ty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.
+sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/g
+ettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count312
+)
+LaTeX Info: Redefining \ref on input line 260.
+LaTeX Info: Redefining \pageref on input line 260.
+LaTeX Info: Redefining \nameref on input line 260.
+(./KirchdorferDataEssay.out) (./KirchdorferDataEssay.out)
+\@outlinefile=\write4
+\openout4 = `KirchdorferDataEssay.out'.
+
+LaTeX Info: Redefining \rmfamily on input line 260.
+LaTeX Info: Redefining \sffamily on input line 260.
+LaTeX Info: Redefining \ttfamily on input line 260.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/n' will be
+(Font)              scaled to size 15.51598pt on input line 264.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/sc' will be
+(Font)              scaled to size 15.51598pt on input line 266.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/it' will be
+(Font)              scaled to size 15.51598pt on input line 275.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/n' will be
+(Font)              scaled to size 22.34734pt on input line 281.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/b/n' will be
+(Font)              scaled to size 22.34734pt on input line 281.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/b/n' will be
+(Font)              scaled to size 15.51598pt on input line 294.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 297
+.
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 297
+.
+(c:/Users/kirch/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+]
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/n' will be
+(Font)              scaled to size 18.61919pt on input line 348.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/b/n' will be
+(Font)              scaled to size 18.61919pt on input line 348.
+(./KirchdorferDataEssay.toc
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/b/n' will be
+(Font)              scaled to size 12.93pt on input line 2.
+
+Overfull \hbox (77.83656pt too wide) in paragraph at lines 5--5
+ [] [][][]\TU/lmtt/b/n/12 {r, header=False} # # table #  # # first run:  # star
+gazer(poisson_, 
+ []
+
+
+Overfull \hbox (2.23653pt too wide) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 neg_bin_1, neg_bin_3, neg_bin_4, neg_bin_5, type="text") 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 # see order of variables and then rename them #  # 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 stargazer( #   list(poisson_, neg_bin_1), #   out = 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 "table_lab.tex", #   title = "Regression Results", 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 #   notes = "Excluding observation Rwanda 1994", # 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 intercept.bottom = TRUE, #    covariate.labels = c( 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 #      "UN Troops t-1", #      "UN Police t-1", # 
+ []
+
+
+Overfull \hbox (33.73659pt too wide) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 "Ceasefire", #      "Strength of Rebel Group", #      "Number 
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 of Rebel Groups", #      "Battle-related fatalities 
+ []
+
+
+Overfull \hbox (21.13657pt too wide) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 t-1", #      "Population ln", #      "Biased Intervention", 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 #      "Ceasefire x Battle-related fatalities t-1", # 
+ []
+
+
+Overfull \hbox (8.53656pt too wide) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 "Constant" #    ), #   dep.var.labels = c("Battle-related 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 fatalities in the government and rebel groups in a 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 month, incl. civilians"), #   table.placement = "H", # 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ \TU/lmtt/b/n/12 latex output, keep the figure at exactly Here in text # 
+ []
+
+
+Overfull \hbox (8.53658pt too wide) in paragraph at lines 7--7
+ [] [][][]\TU/lmtt/b/n/12 {r} # # Quantities of Interest #  # # 1. Get coeffici
+ents 
+ []
+
+
+Overfull \hbox (40.03654pt too wide) in paragraph at lines 7--7
+ \TU/lmtt/b/n/12 from regression # nsim <- 1000 # gamma_hat_1 <- coef(neg_bin_)
+ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
+ \TU/lmtt/b/n/12 # # 2. Get the variance-covariance matrix # V_hat_1 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
+ \TU/lmtt/b/n/12 <- vcov(neg_bin_) # # 3. Set up a multivariate normal 
+ []
+
+
+Overfull \hbox (8.53656pt too wide) in paragraph at lines 7--7
+ \TU/lmtt/b/n/12 distribution # S_1 <- mvrnorm(nsim, gamma_hat_1, V_hat_1) 
+ []
+
+[1]
+Overfull \hbox (96.73654pt too wide) in paragraph at lines 11--11
+ [] [][][]\TU/lmtt/b/n/12 {r} # prior_troops <- round(seq( #   min(neg_bin_$mod
+el$troop_lag1000), 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 #   quantile(neg_bin_$model$troop_lag1000, 0.95), # 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 length.out = 1 # )) #  # # scenario 1: no ceasefire 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 agreement # scenario1 <- cbind( #   1, # intercept # 
+ []
+
+
+Overfull \hbox (96.73654pt too wide) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 median(prior_troops, na.rm = TRUE), #   median(df_clean$police
+_lag1000, 
+ []
+
+
+Overfull \hbox (103.03658pt too wide) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 na.rm = TRUE), #   0, # no ceasefire #   median(df_clean$rebel
+_strength, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 na.rm = TRUE), #   median(df_clean$n_rebel_groups, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 na.rm = TRUE), #   median(df_clean$brf_grc_lag, na.rm 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 = TRUE), #   median(df_clean$pop_ln, na.rm = TRUE), # 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 median(df_clean$biased_intervention, na.rm = TRUE) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 # ) # colnames(scenario1) <- names(gamma_hat_1) # 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 # # scenario 2: ceasefire agreement # scenario2 <- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 scenario1 # scenario2[which(colnames(scenario2) == 
+ []
+
+
+Overfull \hbox (8.53656pt too wide) in paragraph at lines 11--11
+ \TU/lmtt/b/n/12 "ceasefire")] <- 1 #  # head(scenario1) # head(scenario2) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+ [] [][][]\TU/lmtt/b/n/12 {r} # Xbeta1_1 <- S_1 %*% t(scenario1) # Xbeta2_1 <- 
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+ [] [][][]\TU/lmtt/b/n/12 {r} # # get expected values for lambda # lambda1_1 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+ \TU/lmtt/b/n/12 <- exp(Xbeta1_1) # lambda2_1 <- exp(Xbeta2_1) #  # # 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+ \TU/lmtt/b/n/12 plug lambda and theta into neg binomial distribution 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+ \TU/lmtt/b/n/12 # theta_1 <- neg_bin_$theta #  # exp_no_ceasefire <- # 
+ []
+
+
+Overfull \hbox (58.93654pt too wide) in paragraph at lines 15--15
+ \TU/lmtt/b/n/12 apply(lambda1_1, c(1, 2), function(x) { #     mean(rnbinom(100
+00, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+ \TU/lmtt/b/n/12 size = theta_1, mu = x)) #   }) #  # exp_ceasefire <- # 
+ []
+
+
+Overfull \hbox (58.93654pt too wide) in paragraph at lines 15--15
+ \TU/lmtt/b/n/12 apply(lambda2_1, c(1, 2), function(x) { #     mean(rnbinom(100
+00, 
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ [] [][][]\TU/lmtt/b/n/12 {r} # quants_no_ceasefire <- t(apply(exp_no_ceasefire
+, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \TU/lmtt/b/n/12 2, quantile, c(0.025, 0.5, 0.975))) # quants_ceasefire 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+ \TU/lmtt/b/n/12 <- t(apply(exp_ceasefire, 2, quantile, c(0.025, 0.5, 
+ []
+
+
+Overfull \hbox (84.13654pt too wide) in paragraph at lines 17--17
+ \TU/lmtt/b/n/12 0.975))) # colnames(quants_no_ceasefire) # colnames(quants_cea
+sefire) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ [] [][][]\TU/lmtt/b/n/12 {r} # # plot the scenarios # # polygon plot # plot( 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 #   prior_troops, #   quants_no_ceasefire[, "50%"], 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 #   type = "n", #   ylim = c(0, 9000), #   xlim = c(0, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 30), #   ylab = "Number of Battle deaths", #   xlab 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 = "UN Troops", #   bty = "n", #   main = "Expected 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 Deaths in Civil War Situations" # ) #  # polygon( # 
+ []
+
+
+Overfull \hbox (71.53653pt too wide) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 c(rev(prior_troops), prior_troops), #   c(rev(quants_no_ceasef
+ire[, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 "97.5%"]), quants_no_ceasefire[, "2.5%"]), #   col = 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 viridis(3, 0.2)[3], #   border = NA # ) #  # polygon( # 
+ []
+
+
+Overfull \hbox (52.63652pt too wide) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 c(rev(prior_troops), prior_troops), #   c(rev(quants_ceasefire
+[, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 "97.5%"]), quants_ceasefire[, "2.5%"]), #   col = 
+ []
+
+
+Overfull \hbox (71.53659pt too wide) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 viridis(3, 0.2)[2], #   border = NA # ) #  #  # lines(prior_tr
+oops, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 quants_no_ceasefire[, 2], lwd = 2, lty = "dashed", col 
+ []
+
+
+Overfull \hbox (58.93654pt too wide) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 = viridis(3, 0.5)[3]) # lines(prior_troops, quants_no_ceasefir
+e[, 
+ []
+
+
+Overfull \hbox (2.23653pt too wide) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 1], lwd = 0.5, lty = "dashed", col = viridis(3, 0.5)[3]) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 # lines(prior_troops, quants_no_ceasefire[, 3], lwd = 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 0.5, lty = "dashed", col = viridis(3, 0.5)[3]) #  # 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 lines(prior_troops, quants_ceasefire[, 2], lwd = 2, lty 
+ []
+
+
+Overfull \hbox (21.13654pt too wide) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 = "dotted", col = viridis(3, 0.5)[2]) # lines(prior_troops, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 quants_ceasefire[, 1], lwd = 0.5, lty = "dashed", col = 
+ []
+
+
+Overfull \hbox (27.43654pt too wide) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 viridis(3, 0.5)[2]) # lines(prior_troops, quants_ceasefire[, 
+ []
+
+
+Overfull \hbox (2.23653pt too wide) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 3], lwd = 0.5, lty = "dashed", col = viridis(3, 0.5)[2]) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 #  #  #  # # Add a "histogram" of actual X1-values. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 # axis( #   1, #   at = df_clean$troop_lag1000, # 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 col.ticks = "gray30", #   labels = FALSE, #   tck 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 = 0.02 # ) #  # legend( #   "topleft", #   legend = 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 c( #     "Median & 95% CI:", #     "No Ceasefire", 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 #     "Ceasefire" #   ), #   col = c( #     "white", 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 #     viridis(3, 0.5) #   ), #   lty = c(NA, "solid", 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 "dotted", "dashed"), #   lwd = c(NA, 2, 2, 2), #   # 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+ \TU/lmtt/b/n/12 pch = c(NA, 15, NA, 15, NA, 15), #   pt.cex = 2, # 
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+ [] [][][]\TU/lmtt/b/n/12 {r} # # First Difference: # FD <- exp_no_ceasefire - 
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+ \TU/lmtt/b/n/12 exp_ceasefire # quants_FD <- t(apply(FD, 2, quantile, 
+ []
+
+)
+\tf@toc=\write5
+\openout5 = `KirchdorferDataEssay.toc'.
+
+[4] [1] [2]
+Overfull \hbox (252.71999pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## ==========================================================
+===========================================[] 
+ []
+
+
+Overfull \hbox (92.03957pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                                         De
+pendent variable:[] 
+ []
+
+
+Overfull \hbox (252.71925pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                ---------------------------
+-------------------------------------------[] 
+ []
+
+
+Overfull \hbox (197.09964pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                        Battle-related fata
+lities in a month, incl. civilians[] 
+ []
+
+
+Overfull \hbox (209.45943pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                       (1)               (2
+)               (3)              (4)[] 
+ []
+
+
+Overfull \hbox (252.71925pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## ----------------------------------------------------------
+-------------------------------------------[] 
+ []
+
+
+Overfull \hbox (227.98769pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## UN Troops in thousand t-1          -0.125***         -0.08
+2***         -0.079***        -0.057***[] 
+ []
+
+
+Overfull \hbox (221.81947pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                     (0.020)           (0.0
+14)           (0.014)          (0.013)[] 
+ []
+
+
+Overfull \hbox (227.95161pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## Ceasefire                          -0.476***         -0.66
+3***         -1.362***        -1.352***[] 
+ []
+
+
+Overfull \hbox (221.80748pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                     (0.126)           (0.1
+22)           (0.108)          (0.114)[] 
+ []
+
+[3]
+Overfull \hbox (227.98761pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## Number of Rebel Groups             -0.108***         -0.09
+2***                          -0.111***[] 
+ []
+
+
+Overfull \hbox (221.80743pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                     (0.016)           (0.0
+15)                            (0.014)[] 
+ []
+
+
+Overfull \hbox (227.99965pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## Battle-related t-1                 0.015***          0.015
+***          0.011***          0.025***[] 
+ []
+
+
+Overfull \hbox (227.99953pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                    (0.0003)          (0.00
+03)          (0.0003)          (0.0003)[] 
+ []
+
+
+Overfull \hbox (227.98756pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## Population ln                      0.339***          0.344
+***                            0.277***[] 
+ []
+
+
+Overfull \hbox (221.81943pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                     (0.054)           (0.0
+50)                            (0.047)[] 
+ []
+
+
+Overfull \hbox (227.9996pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## Biased Intervention                2.354***          2.335
+***                            2.383***[] 
+ []
+
+
+Overfull \hbox (221.80743pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                     (0.280)           (0.2
+78)                            (0.261)[] 
+ []
+
+
+Overfull \hbox (116.75966pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## Ceasefire x Battle-related t-1                            
+             0.032***[] 
+ []
+
+
+Overfull \hbox (116.75946pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                                           
+              (0.001)[] 
+ []
+
+
+Overfull \hbox (227.93959pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## Constant                            -1.139*          -1.20
+2**          2.167***          -0.966**[] 
+ []
+
+
+Overfull \hbox (221.7835pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                     (0.593)           (0.4
+82)           (0.069)          (0.453)[] 
+ []
+
+
+Overfull \hbox (252.71925pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## ----------------------------------------------------------
+-------------------------------------------[] 
+ []
+
+
+Overfull \hbox (221.78358pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## Observations                        21,367            21,3
+67            21,367            21,338[] 
+ []
+
+
+Overfull \hbox (234.13176pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## Log Likelihood                    -17,201.980       -17,19
+8.870       -17,272.870      -16,650.110[] 
+ []
+
+
+Overfull \hbox (252.71976pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## theta                          0.018*** (0.0005) 0.018*** 
+(0.0005) 0.017*** (0.0004) 0.021*** (0.001)[] 
+ []
+
+
+Overfull \hbox (234.1677pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## Akaike Inf. Crit.                 34,421.950        34,411
+.730        34,555.740        33,314.220[] 
+ []
+
+
+Overfull \hbox (252.71999pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## ==========================================================
+===========================================[] 
+ []
+
+
+Overfull \hbox (252.71947pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ## Note:                                                     
+                *p<0.1; **p<0.05; ***p<0.01[] 
+ []
+
+
+Overfull \hbox (252.7194pt too wide) in paragraph at lines 504--504
+[]\TU/lmtt/m/n/12 ##                                                           
+                  Model 4 exlcudes outliers[] 
+ []
+
+
+Overfull \hbox (1.34882pt too wide) in paragraph at lines 507--507
+[]\TU/lmtt/b/n/17.28 {r, header=False} # # table #  # # first
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 run:  # stargazer(poisson_, neg_bin_1,
+ []
+
+
+Overfull \hbox (46.70876pt too wide) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 neg_bin_3, neg_bin_4, neg_bin_5, type="text")
+ []
+
+
+Overfull \hbox (1.34877pt too wide) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 # see order of variables and then rename
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 them #  # stargazer( #   list(poisson_,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 neg_bin_1), #   out = "table_lab.tex",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 #   title = "Regression Results", #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 notes = "Excluding observation Rwanda
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 1994", #   intercept.bottom = TRUE,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 #    covariate.labels = c( #      "UN
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 Troops t-1", #      "UN Police t-1",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 #      "Ceasefire", #      "Strength of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 Rebel Group", #      "Number of Rebel
+ []
+
+
+Overfull \hbox (19.49277pt too wide) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 Groups", #      "Battle-related fatalities
+ []
+
+
+Overfull \hbox (37.63683pt too wide) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 t-1", #      "Population ln", #      "Biased
+ []
+
+
+Overfull \hbox (82.9968pt too wide) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 Intervention", #      "Ceasefire x Battle-related
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 fatalities t-1", #      "Constant" #
+ []
+
+
+Overfull \hbox (10.42076pt too wide) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 ), #   dep.var.labels = c("Battle-related
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 fatalities in the government and rebel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 groups in a month, incl. civilians"), #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 table.placement = "H", # latex output,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+\TU/lmtt/b/n/17.28 keep the figure at exactly Here in text
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
+[]\TU/lmtt/b/n/17.28 {r} # # Quantities of Interest #  # #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
+\TU/lmtt/b/n/17.28 1. Get coefficients from regression #
+ []
+
+
+Overfull \hbox (37.63675pt too wide) in paragraph at lines 513--513
+\TU/lmtt/b/n/17.28 nsim <- 1000 # gamma_hat_1 <- coef(neg_bin_)
+ []
+
+
+Overfull \hbox (10.42076pt too wide) in paragraph at lines 513--513
+\TU/lmtt/b/n/17.28 # # 2. Get the variance-covariance matrix
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
+\TU/lmtt/b/n/17.28 # V_hat_1 <- vcov(neg_bin_) # # 3. Set
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
+\TU/lmtt/b/n/17.28 up a multivariate normal distribution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
+\TU/lmtt/b/n/17.28 # S_1 <- mvrnorm(nsim, gamma_hat_1,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+[]\TU/lmtt/b/n/17.28 {r} # prior_troops <- round(seq( #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 min(neg_bin_$model$troop_lag1000), #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 quantile(neg_bin_$model$troop_lag1000,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 0.95), #   length.out = 1 # )) #  # #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 scenario 1: no ceasefire agreement #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 scenario1 <- cbind( #   1, # intercept
+ []
+
+
+Overfull \hbox (2.12631pt too wide) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 #   median(prior_troops, na.rm = TRUE),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 #   median(df_clean$police_lag1000,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 na.rm = TRUE), #   0, # no ceasefire #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 median(df_clean$rebel_strength, na.rm
+ []
+
+
+Overfull \hbox (47.48628pt too wide) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 = TRUE), #   median(df_clean$n_rebel_groups,
+ []
+
+
+Overfull \hbox (74.70232pt too wide) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 na.rm = TRUE), #   median(df_clean$brf_grc_lag,
+ []
+
+
+Overfull \hbox (29.34232pt too wide) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 na.rm = TRUE), #   median(df_clean$pop_ln,
+ []
+
+
+Overfull \hbox (147.2783pt too wide) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 na.rm = TRUE), #   median(df_clean$biased_intervention,
+ []
+
+
+Overfull \hbox (2.12633pt too wide) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 na.rm = TRUE) # ) # colnames(scenario1)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 <- names(gamma_hat_1) #  # # scenario
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 2: ceasefire agreement # scenario2 <-
+ []
+
+
+Overfull \hbox (74.70226pt too wide) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 scenario1 # scenario2[which(colnames(scenario2)
+ []
+
+
+Overfull \hbox (29.34232pt too wide) in paragraph at lines 525--525
+\TU/lmtt/b/n/17.28 == "ceasefire")] <- 1 #  # head(scenario1)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+[]\TU/lmtt/b/n/17.28 {r} # Xbeta1_1 <- S_1 %*% t(scenario1)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
+[]\TU/lmtt/b/n/17.28 {r} # # get expected values for lambda
+ []
+
+
+Overfull \hbox (11.1983pt too wide) in paragraph at lines 537--537
+\TU/lmtt/b/n/17.28 # lambda1_1 <- exp(Xbeta1_1) # lambda2_1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
+\TU/lmtt/b/n/17.28 <- exp(Xbeta2_1) #  # # plug lambda
+ []
+
+
+Overfull \hbox (11.1983pt too wide) in paragraph at lines 537--537
+\TU/lmtt/b/n/17.28 and theta into neg binomial distribution
+ []
+
+
+Overfull \hbox (92.84631pt too wide) in paragraph at lines 537--537
+\TU/lmtt/b/n/17.28 # theta_1 <- neg_bin_$theta #  # exp_no_ceasefire
+ []
+
+
+Overfull \hbox (47.4863pt too wide) in paragraph at lines 537--537
+\TU/lmtt/b/n/17.28 <- #   apply(lambda1_1, c(1, 2), function(x)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
+\TU/lmtt/b/n/17.28 { #     mean(rnbinom(10000, size =
+ []
+
+
+Overfull \hbox (38.41435pt too wide) in paragraph at lines 537--537
+\TU/lmtt/b/n/17.28 theta_1, mu = x)) #   }) #  # exp_ceasefire
+ []
+
+
+Overfull \hbox (47.4863pt too wide) in paragraph at lines 537--537
+\TU/lmtt/b/n/17.28 <- #   apply(lambda2_1, c(1, 2), function(x)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
+\TU/lmtt/b/n/17.28 { #     mean(rnbinom(10000, size =
+ []
+
+
+Overfull \hbox (138.20628pt too wide) in paragraph at lines 543--543
+[]\TU/lmtt/b/n/17.28 {r} # quants_no_ceasefire <- t(apply(exp_no_ceasefire,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+\TU/lmtt/b/n/17.28 2, quantile, c(0.025, 0.5, 0.975))) #
+ []
+
+
+Overfull \hbox (29.34225pt too wide) in paragraph at lines 543--543
+\TU/lmtt/b/n/17.28 quants_ceasefire <- t(apply(exp_ceasefire,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+\TU/lmtt/b/n/17.28 2, quantile, c(0.025, 0.5, 0.975))) #
+ []
+
+
+Overfull \hbox (174.49426pt too wide) in paragraph at lines 543--543
+\TU/lmtt/b/n/17.28 colnames(quants_no_ceasefire) # colnames(quants_ceasefire)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+[]\TU/lmtt/b/n/17.28 {r} # # plot the scenarios # # polygon
+ []
+
+
+Overfull \hbox (156.35033pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 plot # plot( #   prior_troops, #   quants_no_ceasefire[,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 "50%"], #   type = "n", #   ylim =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 c(0, 9000), #   xlim = c(0, 30), #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 ylab = "Number of Battle deaths", #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 xlab = "UN Troops", #   bty = "n",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 #   main = "Expected Deaths in Civil
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 War Situations" # ) #  # polygon( #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 c(rev(prior_troops), prior_troops), #
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 c(rev(quants_no_ceasefire[, "97.5%"]),
+ []
+
+
+Overfull \hbox (2.1263pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 quants_no_ceasefire[, "2.5%"]), #   col
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 = viridis(3, 0.2)[3], #   border = NA
+ []
+
+
+Overfull \hbox (29.34235pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 # ) #  # polygon( #   c(rev(prior_troops),
+ []
+
+
+Overfull \hbox (38.41429pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 prior_troops), #   c(rev(quants_ceasefire[,
+ []
+
+
+Overfull \hbox (2.12628pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 "97.5%"]), quants_ceasefire[, "2.5%"]),
+ []
+
+
+Overfull \hbox (11.19835pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 #   col = viridis(3, 0.2)[2], #   border
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 = NA # ) #  #  # lines(prior_troops,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 quants_no_ceasefire[, 2], lwd = 2, lty
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 = "dashed", col = viridis(3, 0.5)[3])
+ []
+
+
+Overfull \hbox (38.41426pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 # lines(prior_troops, quants_no_ceasefire[,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 1], lwd = 0.5, lty = "dashed", col =
+ []
+
+
+Overfull \hbox (20.27028pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 viridis(3, 0.5)[3]) # lines(prior_troops,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 quants_no_ceasefire[, 3], lwd = 0.5,
+ []
+
+
+Overfull \hbox (20.27032pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 lty = "dashed", col = viridis(3, 0.5)[3])
+ []
+
+
+Overfull \hbox (38.41429pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 #  # lines(prior_troops, quants_ceasefire[,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 2], lwd = 2, lty = "dotted", col =
+ []
+
+
+Overfull \hbox (20.27028pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 viridis(3, 0.5)[2]) # lines(prior_troops,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 quants_ceasefire[, 1], lwd = 0.5, lty
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 = "dashed", col = viridis(3, 0.5)[2])
+ []
+
+
+Overfull \hbox (11.19827pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 # lines(prior_troops, quants_ceasefire[,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 3], lwd = 0.5, lty = "dashed", col =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 viridis(3, 0.5)[2]) #  #  #  # # Add
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 a "histogram" of actual X1-values. #
+ []
+
+
+Overfull \hbox (56.55835pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 axis( #   1, #   at = df_clean$troop_lag1000,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 #   col.ticks = "gray30", #   labels =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 FALSE, #   tck = 0.02 # ) #  # legend(
+ []
+
+
+Overfull \hbox (47.48639pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 #   "topleft", #   legend = c( #     "Median
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 & 95% CI:", #     "No Ceasefire", #
+ []
+
+
+Overfull \hbox (65.63039pt too wide) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 "Ceasefire" #   ), #   col = c( #     "white",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 #     viridis(3, 0.5) #   ), #   lty =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 c(NA, "solid", "dotted", "dashed"),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 #   lwd = c(NA, 2, 2, 2), #   # pch =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\TU/lmtt/b/n/17.28 c(NA, 15, NA, 15, NA, 15), #   pt.cex
+ []
+
+
+Overfull \hbox (101.91832pt too wide) in paragraph at lines 555--555
+[]\TU/lmtt/b/n/17.28 {r} # # First Difference: # FD <- exp_no_ceasefire
+ []
+
+
+Overfull \hbox (29.3423pt too wide) in paragraph at lines 555--555
+\TU/lmtt/b/n/17.28 - exp_ceasefire # quants_FD <- t(apply(FD,
+ []
+
+[4] [5]
+Overfull \vbox (3070.95673pt too high) has occurred while \output is active []
+
+[6]
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/n' will be
+(Font)              scaled to size 11.79861pt on input line 574.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/n' will be
+(Font)              scaled to size 8.62pt on input line 587.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/n' will be
+(Font)              scaled to size 10.775pt on input line 589.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/n' will be
+(Font)              scaled to size 7.5425pt on input line 589.
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/b/n' will be
+(Font)              scaled to size 10.775pt on input line 589.
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--589
+[][][]\TU/EBGaramond-Regular.ttf(0)/m/n/10 Here is how you add a footnote, and 
+include a citation there as well
+ []
+
+File: figs/mtcars-1.pdf Graphic file (type pdf)
+<use figs/mtcars-1.pdf>
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/it' will be
+(Font)              scaled to size 10.775pt on input line 603.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8]
+LaTeX Font Info:    Font shape `TU/EBGaramond-Regular.ttf(0)/m/it' will be
+(Font)              scaled to size 12.93pt on input line 630.
+
+Underfull \hbox (badness 1082) in paragraph at lines 628--633
+[]\TU/EBGaramond-Regular.ttf(0)/m/n/12 Lacasa, Lucas, and Juan Fernández-Gracia
+. 2003. “Ethnicity, Insurgency,
+ []
+
+
+Underfull \hbox (badness 6380) in paragraph at lines 628--633
+\TU/EBGaramond-Regular.ttf(0)/m/n/12 and Civil War.” \TU/EBGaramond-Regular.ttf
+(0)/m/it/12 American Political Science Review \TU/EBGaramond-Regular.ttf(0)/m/n
+/12 97(1): 75–90.
+ []
+
+[9]
+File: figs/mtcars1-1.pdf Graphic file (type pdf)
+<use figs/mtcars1-1.pdf>
+[1]
+File: figs/mtcars2-1.pdf Graphic file (type pdf)
+<use figs/mtcars2-1.pdf>
+[2]
+Underfull \hbox (badness 2884) in paragraph at lines 702--715
+\TU/EBGaramond-Regular.ttf(0)/m/n/12 eines Plagiatsabgleichs in elektronischer 
+Form anonymisiert versendet und
+ []
+
+
+Overfull \hbox (22.8444pt too wide) in paragraph at lines 716--716
+[]\TU/EBGaramond-Regular.ttf(0)/m/n/12 Mannheim, den []  [] 
+ []
+
+
+Overfull \hbox (2.7081pt too wide) in paragraph at lines 732--732
+[]\TU/EBGaramond-Regular.ttf(0)/m/n/12 Mannheim, []  [] 
+ []
+
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {american}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+[3
+
+] (./KirchdorferDataEssay.aux
+LaTeX Info: Redefining \rmfamily on input line 19.
+LaTeX Info: Redefining \sffamily on input line 19.
+LaTeX Info: Redefining \ttfamily on input line 19.
+)
+Package rerunfilecheck Info: File `KirchdorferDataEssay.out' has not changed.
+(rerunfilecheck)             Checksum: 43FF198E4CB06043EF6D3DA1636B0E91;27931.
+ ) 
+Here is how much of TeX's memory you used:
+ 15300 strings out of 478256
+ 303238 string characters out of 5854460
+ 789280 words of memory out of 5000000
+ 35582 multiletter control sequences out of 15000+600000
+ 411911 words of font info for 89 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 87i,11n,122p,9754b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on KirchdorferDataEssay.pdf (17 pages).
